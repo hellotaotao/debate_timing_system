@@ -1,0 +1,45 @@
+@import "stopwatch.scss";
+
+nav.top-bar {
+  .row .columns {
+    padding: 0px 50px;
+    .debate-topic {
+      font-size: 30px;
+      height: 57px;
+    }
+  }
+  color: white;
+  height: 120px;
+  font-size: 36px;
+}
+
+.tabs-content {
+  min-height: 600px;
+  .content .row .columns {
+    .stopwatch {
+      min-height: 450px;
+      background-image: radial-gradient(at top, #63c2f8, #008baa);
+    }
+  }
+}
+
+#tab-nav {
+  // position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  text-align: center;
+  // width: 100%;
+  .table {
+    display: table;
+    margin: 0 auto;
+  }
+
+}
+
+.text-center {
+  text-align: center;
+}
+.block-center {
+  margin-left: auto;
+  margin-right: auto;
+}

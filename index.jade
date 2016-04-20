@@ -1,0 +1,68 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(content='width=device-width, initial-scale=1.0', name='viewport')
+    title Foundation | Welcome
+    link(href='css/foundation.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
+    script(src='js/vendor/modernizr.js')
+  body
+    nav.top-bar
+      .row
+        .medium-6.columns
+          .text-white.right
+            | 正方
+          br
+          .debate-topic.right.button.round
+            | 应该支持XXXXOOOO
+        .medium-6.columns
+          .left
+            | 反方
+          .debate-topic.left.button.round
+            | 应该反对XXXXOOOO
+
+
+    .tabs-content
+      #panel1.content.active
+        .row.text-center
+          h4 一辩陈词环节，双方各4分钟
+        .row
+          .medium-6.columns.clearfix
+            .stopwatch
+              include ./jade/stopwatch.jade
+          .medium-6.columns.clearfix
+            .stopwatch 
+              include ./jade/stopwatch.jade
+      #panel2.content
+        p
+          | This is the 二辩对辩 panel of the basic tab example. This is the second panel of the basic tab example.
+      #panel3.content
+        p
+          | This is the 三辩质询 panel of the basic tab example. This is the third panel of the basic tab example.
+      #panel4.content
+        p
+          | This is the 自由辩论 panel of the basic tab example. This is the fourth panel of the basic tab example.
+      #panel5.content
+        p
+          | This is the 四辩结辩 panel of the basic tab example. This is the fourth panel of the basic tab example.
+    #tab-nav
+      .table
+        ul.tabs(data-tab='')
+          li.tab-title.active
+            a(href='#panel1') 一辩陈词
+          li.tab-title
+            a(href='#panel2') 二辩对辩
+          li.tab-title
+            a(href='#panel3') 三辩质询
+          li.tab-title
+            a(href='#panel4') 自由辩论
+          li.tab-title
+            a(href='#panel5') 四辩结辩
+
+
+script(src='js/vendor/jquery.js')
+script(src='js/foundation.min.js')
+script(src='js/script.js')
+script.
+  $(document).foundation();
