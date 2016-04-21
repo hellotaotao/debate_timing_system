@@ -8,7 +8,6 @@ main {
   main time {
     display: block;
     width: 310px;
-    text-align: center;
     color: white;
     font-size: 4rem;
     font-weight: 900;
@@ -68,7 +67,7 @@ nav.top-bar {
   height: 120px;
   font-size: 36px; }
   nav.top-bar .row .columns {
-    padding: 0px 50px; }
+    padding: 0 50px; }
     nav.top-bar .row .columns .debate-topic {
       font-size: 30px;
       height: 57px; }
@@ -76,7 +75,7 @@ nav.top-bar {
 .tabs-content {
   min-height: 400px; }
   .tabs-content .content .row .columns .stopwatch {
-    min-height: 450px;
+    min-height: 330px;
     background-image: radial-gradient(at top, #63c2f8, #008baa); }
 
 #tab-nav {
