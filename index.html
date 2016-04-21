@@ -29,6 +29,9 @@
         </div>
         <div class="row">
           <div class="small-6 columns clearfix">
+            <div class="row text-center">
+              <H3 class="text-white text-shadow">一辩陈词</H3>
+            </div>
             <div class="stopwatch">
               <main class="stopwatch-first">
                 <time id="stopwatch-first-timer" class="stopwatch-timer">00:00.00</time>
@@ -38,6 +41,9 @@
             </div>
           </div>
           <div class="small-6 columns clearfix">
+            <div class="row text-center">
+              <H3 class="text-white text-shadow">四辩质询</H3>
+            </div>
             <div class="stopwatch">
               <main class="stopwatch-first">
                 <time id="stopwatch-first-ask-timer" class="stopwatch-timer">00:00.00</time>
@@ -81,7 +87,7 @@
       </div>
       <div id="panel3" class="content">
         <div class="row text-center">
-          <h3 class="text-center">质询环节双方各2分xx秒</h3>
+          <h3 class="text-center">质询环节双方各2分30秒, 总结</h3>
         </div>
         <div class="row">
           <div class="small-6 columns clearfix">
@@ -112,7 +118,21 @@
       </div>
       <div id="panel4" class="content">
         <div class="row text-center">
-          <h3>自由辩论环节,双方各xx分xx秒</h3>
+          <h3>讨论时间: 2分钟</h3>
+        </div>
+        <div class="row">
+          <div class="small-12 columns">
+            <main class="stopwatch-final">
+              <time id="stopwatch-discuss-timer" class="stopwatch-timer">00:00.00</time>
+              <button id="stopwatch-discuss-toggle" class="stopwatch-toggle">start</button>
+              <button id="stopwatch-discuss-clear" class="stopwatch-clear">clear</button>
+            </main>
+          </div>
+        </div>
+      </div>
+      <div id="panel5" class="content">
+        <div class="row text-center">
+          <h3>自由辩论环节,双方各4分钟</h3>
         </div>
         <div class="row">
           <div class="small-12 columns">
@@ -134,9 +154,9 @@
           </div>
         </div>
       </div>
-      <div id="panel5" class="content">
+      <div id="panel6" class="content">
         <div class="row text-center">
-          <h3>四辩总结环节,双方各xx分xx秒</h3>
+          <h3>四辩总结环节,双方各4分钟</h3>
         </div>
         <div class="row">
           <div class="small-12 columns clearfix">
@@ -156,8 +176,9 @@
         <li class="tab-title active"><a href="#panel1">一辩陈词</a></li>
         <li class="tab-title"><a href="#panel2">二辩对辩</a></li>
         <li class="tab-title"><a href="#panel3">三辩质询</a></li>
-        <li class="tab-title"><a href="#panel4">自由辩论</a></li>
-        <li class="tab-title"><a href="#panel5">四辩结辩</a></li>
+        <li class="tab-title"><a href="#panel4">讨论时间</a></li>
+        <li class="tab-title"><a href="#panel5">自由辩论</a></li>
+        <li class="tab-title"><a href="#panel6">四辩结辩</a></li>
       </ul>
     </div>
   </body>
@@ -172,6 +193,7 @@
 <script src="js/stopwatch_second.js"></script>
 <script src="js/stopwatch_third_ask.js"></script>
 <script src="js/stopwatch_third_conclude.js"></script>
+<script src="js/stopwatch_discuss.js"></script>
 <script src="js/stopwatch_final.js"></script>
 <script src="js/script.js"></script>
 <script>$(document).foundation();</script>

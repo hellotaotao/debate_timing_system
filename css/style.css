@@ -79,6 +79,10 @@ nav.top-bar {
   .tabs-content .content .row .columns {
     background-image: radial-gradient(at top, #63c2f8, #008baa);
     min-height: 400px; }
+  .tabs-content H3.text-white.text-shadow {
+    padding-top: 25px; }
+  .tabs-content #panel4 .row .columns {
+    padding-top: 80px; }
 
 #tab-nav {
   bottom: 0;
