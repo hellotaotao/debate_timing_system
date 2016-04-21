@@ -24,8 +24,10 @@ body {
 .time-container input:focus {
     outline: 0 !important;
 }
-#left,
-#right {
+#second-left,
+#second-right,
+#free-left,
+#free-right{
     font-size: 6em;
     padding-top: 15px;
 }
