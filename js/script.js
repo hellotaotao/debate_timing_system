@@ -1,9 +1,7 @@
-var second_duration=2.5;
-var free_duration=4;
-
-(function countdownTimer() {
+(function countdownTimerLeft() {
 	'use strict';
-
+	var duration = moment.duration(first_duration, "minutes");
+	var time_left=duration;
 	//declare
 	var output = document.getElementById('timer');
 	var toggle = document.getElementById('toggle');
@@ -53,11 +51,22 @@ var free_duration=4;
 	};
 
 
+	// init
+	var init = function() {
+		var time = parseTime(duration);
+		output.innerHTML = time[1] + ':' + time[2] + '.' + time[3];
+	};
+
 	// run
 	var run = function() {
 		// get output array and print
-		var time = parseTime(Date.now()-then-delay);
-		output.innerHTML = time[0] + ':' + time[1] + ':' + time[2] + '.' + time[3];
+		time_left = then+duration-Date.now()-delay;
+		if (time_left<=0) {
+			stop();
+			$("#stopwatch_left").style("background: red;");
+		}
+		var time = parseTime(time_left);
+		output.innerHTML = time[1] + ':' + time[2] + '.' + time[3];
 	};
 
 
@@ -89,7 +98,7 @@ var free_duration=4;
 		running = false;
 		paused = false;
 		toggle.innerHTML = 'start';
-		output.innerHTML = '0:00:00.00';
+		output.innerHTML = '00:00.00';
 		clear.dataset.state = '';
 	};
 
@@ -100,7 +109,7 @@ var free_duration=4;
 		else if (paused) {resume();}
 		else {stop();}
 	};
-
+	init();
 	toggle.addEventListener('click',router);
 	clear.addEventListener('click',reset);
 
