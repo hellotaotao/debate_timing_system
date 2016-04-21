@@ -1,9 +1,13 @@
 var first_duration=4;
+var first_ask_duration=1.5;
 
 var second_duration=2.5;
+var second_conclude_duration=2;
 
-var third_ask_duration=2;
-var third_conclusion_duration=2;
+var third_ask_duration=2.5;
+var third_conclude_duration=2;
+
+var prepare_for_free=2;
 
 var free_duration=4;
 

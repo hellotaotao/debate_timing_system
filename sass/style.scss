@@ -3,7 +3,7 @@
 
 nav.top-bar {
   .row .columns {
-    padding: 0px 50px;
+    padding: 0 50px;
     .debate-topic {
       font-size: 30px;
       height: 57px;
@@ -15,12 +15,15 @@ nav.top-bar {
 }
 
 .tabs-content {
-  min-height: 450px;
+  //min-height: 450px;
+
+  margin-bottom: 0;
   .content .row .columns {
-    .stopwatch {
-      min-height: 330px;
-      background-image: radial-gradient(at top, #63c2f8, #008baa);
-    }
+    background-image: radial-gradient(at top, #63c2f8, #008baa);
+    min-height: 400px;
+  }
+  .stopwatch {
+
   }
 }
 
@@ -51,4 +54,11 @@ nav.top-bar {
 .block-center {
   margin-left: auto;
   margin-right: auto;
+}
+
+.text-white {
+  color: white;
+}
+.text-shadow {
+  text-shadow: #1a1a1a 1px 1px 10px;
 }
