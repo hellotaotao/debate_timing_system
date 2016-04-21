@@ -6,7 +6,9 @@ html.no-js(lang='en')
     title Foundation | Welcome
     link(href='css/foundation.css', rel='stylesheet')
     link(href='css/style.css', rel='stylesheet')
+    link(rel='stylesheet', href='//cdn.jsdelivr.net/flat-ui/2.0/css/flat-ui.css')
     script(src='js/vendor/modernizr.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js')
   body
     nav.top-bar
       .row
@@ -17,8 +19,8 @@ html.no-js(lang='en')
           .debate-topic.right.button.round
             | 应该支持XXXXOOOO
         .medium-6.columns
-          .left
-            | 反方
+          | 反方
+          br
           .debate-topic.left.button.round
             | 应该反对XXXXOOOO
 
@@ -30,35 +32,52 @@ html.no-js(lang='en')
         .row
           .medium-6.columns.clearfix
             .stopwatch
-              include ./jade/stopwatch.jade
+              include jade/stopwatch_left
           .medium-6.columns.clearfix
             .stopwatch 
-              include ./jade/stopwatch.jade
+              include jade/stopwatch_right
       #panel2.content
-        p
-          | This is the 二辩对辩 panel of the basic tab example. This is the second panel of the basic tab example.
+        .row.text-center
+          h4 二辩对辩环节,双方各xx分xx秒
+        .row
+          include jade/second_timer
       #panel3.content
-        p
-          | This is the 三辩质询 panel of the basic tab example. This is the third panel of the basic tab example.
+        .row.text-center
+          h4 三辩质询环节,双方各xx分xx秒
+        .row
+          .medium-6.columns.clearfix
+            .stopwatch
+              include jade/stopwatch_left
+          .medium-6.columns.clearfix
+            .stopwatch
+              include jade/stopwatch_right
       #panel4.content
-        p
-          | This is the 自由辩论 panel of the basic tab example. This is the fourth panel of the basic tab example.
+        .row.text-center
+          h4 自由辩论环节,双方各xx分xx秒
+        .row
+          include jade/free_timer
       #panel5.content
-        p
-          | This is the 四辩结辩 panel of the basic tab example. This is the fourth panel of the basic tab example.
+        .row.text-center
+          h4 四辩总结环节,双方各xx分xx秒
+        .row
+          .medium-6.columns.clearfix
+            .stopwatch
+              include jade/stopwatch_left
+          .medium-6.columns.clearfix
+            .stopwatch
+              include jade/stopwatch_right
     #tab-nav
-      .table
-        ul.tabs(data-tab='')
-          li.tab-title.active
-            a(href='#panel1') 一辩陈词
-          li.tab-title
-            a(href='#panel2') 二辩对辩
-          li.tab-title
-            a(href='#panel3') 三辩质询
-          li.tab-title
-            a(href='#panel4') 自由辩论
-          li.tab-title
-            a(href='#panel5') 四辩结辩
+      ul.tabs(data-tab='')
+        li.tab-title.active
+          a(href='#panel1') 一辩陈词
+        li.tab-title
+          a(href='#panel2') 二辩对辩
+        li.tab-title
+          a(href='#panel3') 三辩质询
+        li.tab-title
+          a(href='#panel4') 自由辩论
+        li.tab-title
+          a(href='#panel5') 四辩结辩
 
 
 script(src='js/vendor/jquery.js')

@@ -6,7 +6,9 @@
     <title>Foundation | Welcome</title>
     <link href="css/foundation.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/flat-ui/2.0/css/flat-ui.css">
     <script src="js/vendor/modernizr.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
   </head>
   <body>
     <nav class="top-bar">
@@ -15,8 +17,7 @@
           <div class="text-white right">正方</div><br>
           <div class="debate-topic right button round">应该支持XXXXOOOO</div>
         </div>
-        <div class="medium-6 columns">
-          <div class="left">反方</div>
+        <div class="medium-6 columns">反方<br>
           <div class="debate-topic left button round">应该反对XXXXOOOO</div>
         </div>
       </div>
@@ -48,28 +49,108 @@
         </div>
       </div>
       <div id="panel2" class="content">
-        <p>This is the 二辩对辩 panel of the basic tab example. This is the second panel of the basic tab example.</p>
+        <div class="row text-center">
+          <h4>二辩对辩环节,双方各xx分xx秒</h4>
+        </div>
+        <div class="row">
+          <div class="flex-container">
+            <div id="left" class="time-container">
+              <input type="button" value="Player 1" class="toggle btn btn-lg btn-primary btn-block"><span class="time"></span>
+            </div>
+            <div id="controls" class="time-container">
+              <div class="form-group">
+                <input id="time-input" type="number" placeholder="Minutes" min="1" value="20" class="form-control">
+                <input id="pause" type="button" value="Pause" class="form-control btn btn-block btn-default">
+                <input id="reset" type="button" value="Reset" class="btn btn-block btn-danger">
+              </div>
+            </div>
+            <div id="right" class="time-container">
+              <input type="button" value="Player 2" class="toggle btn btn-lg btn-primary"><span class="time"></span>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="panel3" class="content">
-        <p>This is the 三辩质询 panel of the basic tab example. This is the third panel of the basic tab example.</p>
+        <div class="row text-center">
+          <h4>三辩质询环节,双方各xx分xx秒</h4>
+        </div>
+        <div class="row">
+          <div class="medium-6 columns clearfix">
+            <div class="stopwatch">
+              <main>
+                <time id="timer">0:00:00.00</time>
+                <button id="toggle">start</button>
+                <button id="clear">clear</button>
+              </main>
+            </div>
+          </div>
+          <div class="medium-6 columns clearfix">
+            <div class="stopwatch">
+              <main>
+                <time id="timer">0:00:00.00</time>
+                <button id="toggle">start</button>
+                <button id="clear">clear</button>
+              </main>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="panel4" class="content">
-        <p>This is the 自由辩论 panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+        <div class="row text-center">
+          <h4>自由辩论环节,双方各xx分xx秒</h4>
+        </div>
+        <div class="row">
+          <div class="flex-container">
+            <div id="left" class="time-container">
+              <input type="button" value="Player 1" class="toggle btn btn-lg btn-primary btn-block"><span class="time"></span>
+            </div>
+            <div id="controls" class="time-container">
+              <div class="form-group">
+                <input id="time-input" type="number" placeholder="Minutes" min="1" value="20" class="form-control">
+                <input id="pause" type="button" value="Pause" class="form-control btn btn-block btn-default">
+                <input id="reset" type="button" value="Reset" class="btn btn-block btn-danger">
+              </div>
+            </div>
+            <div id="right" class="time-container">
+              <input type="button" value="Player 2" class="toggle btn btn-lg btn-primary"><span class="time"></span>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="panel5" class="content">
-        <p>This is the 四辩结辩 panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+        <div class="row text-center">
+          <h4>四辩总结环节,双方各xx分xx秒</h4>
+        </div>
+        <div class="row">
+          <div class="medium-6 columns clearfix">
+            <div class="stopwatch">
+              <main>
+                <time id="timer">0:00:00.00</time>
+                <button id="toggle">start</button>
+                <button id="clear">clear</button>
+              </main>
+            </div>
+          </div>
+          <div class="medium-6 columns clearfix">
+            <div class="stopwatch">
+              <main>
+                <time id="timer">0:00:00.00</time>
+                <button id="toggle">start</button>
+                <button id="clear">clear</button>
+              </main>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="tab-nav">
-      <div class="table">
-        <ul data-tab="" class="tabs">
-          <li class="tab-title active"><a href="#panel1">一辩陈词</a></li>
-          <li class="tab-title"><a href="#panel2">二辩对辩</a></li>
-          <li class="tab-title"><a href="#panel3">三辩质询</a></li>
-          <li class="tab-title"><a href="#panel4">自由辩论</a></li>
-          <li class="tab-title"><a href="#panel5">四辩结辩</a></li>
-        </ul>
-      </div>
+      <ul data-tab="" class="tabs">
+        <li class="tab-title active"><a href="#panel1">一辩陈词</a></li>
+        <li class="tab-title"><a href="#panel2">二辩对辩</a></li>
+        <li class="tab-title"><a href="#panel3">三辩质询</a></li>
+        <li class="tab-title"><a href="#panel4">自由辩论</a></li>
+        <li class="tab-title"><a href="#panel5">四辩结辩</a></li>
+      </ul>
     </div>
   </body>
 </html>

@@ -1,4 +1,5 @@
 @import "stopwatch.scss";
+@import "chessclock.scss";
 
 nav.top-bar {
   .row .columns {
@@ -32,6 +33,14 @@ nav.top-bar {
   .table {
     display: table;
     margin: 0 auto;
+  }
+  ul {
+    text-align: center;
+    list-style: none;
+    li {
+      display: inline-block;
+      float: none;
+    }
   }
 
 }

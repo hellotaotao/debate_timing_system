@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto");
 main {
   height: 150px;
   position: absolute;
@@ -32,6 +33,36 @@ main {
       opacity: 1;
       pointer-events: auto; }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  text-align: center;
+  flex-wrap: wrap; }
+
+.form-group,
+.time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.time-container input:focus {
+  outline: 0 !important; }
+
+#left,
+#right {
+  font-size: 6em;
+  padding-top: 15px; }
+
 nav.top-bar {
   color: white;
   height: 120px;
@@ -55,6 +86,12 @@ nav.top-bar {
   #tab-nav .table {
     display: table;
     margin: 0 auto; }
+  #tab-nav ul {
+    text-align: center;
+    list-style: none; }
+    #tab-nav ul li {
+      display: inline-block;
+      float: none; }
 
 .text-center {
   text-align: center; }
