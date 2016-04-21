@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2efa4dac-4d3a-4ecb-b31d-36e8a131f1b3" name="Default" comment="progressing">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/flat-ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/stopwatch_first.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/01b9a750f9d3723310c679274c4a77e0e1cc9b85/chessclock.scssc" afterPath="$PROJECT_DIR$/sass/.sass-cache/01b9a750f9d3723310c679274c4a77e0e1cc9b85/chessclock.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/01b9a750f9d3723310c679274c4a77e0e1cc9b85/stopwatch.scssc" afterPath="$PROJECT_DIR$/sass/.sass-cache/01b9a750f9d3723310c679274c4a77e0e1cc9b85/stopwatch.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/01b9a750f9d3723310c679274c4a77e0e1cc9b85/style.scssc" afterPath="$PROJECT_DIR$/sass/.sass-cache/01b9a750f9d3723310c679274c4a77e0e1cc9b85/style.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.codekit" afterPath="$PROJECT_DIR$/config.codekit" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.jade" afterPath="$PROJECT_DIR$/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade/free_timer.jade" afterPath="$PROJECT_DIR$/jade/free_timer.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade/second_timer.jade" afterPath="$PROJECT_DIR$/jade/second_timer.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade/stopwatch_first.jade" afterPath="$PROJECT_DIR$/jade/stopwatch_first.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/min/script-min.js" afterPath="$PROJECT_DIR$/js/min/script-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/variables.js" afterPath="$PROJECT_DIR$/js/variables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/chessclock.scss" afterPath="$PROJECT_DIR$/sass/chessclock.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/stopwatch.scss" afterPath="$PROJECT_DIR$/sass/stopwatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/style.scss" afterPath="$PROJECT_DIR$/sass/style.scss" />
-    </list>
+    <list default="true" id="2efa4dac-4d3a-4ecb-b31d-36e8a131f1b3" name="Default" comment="" />
     <ignored path="CCDD.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -383,7 +363,7 @@
       <updated>1461161550553</updated>
       <workItem from="1461200208162" duration="3076000" />
       <workItem from="1461215651000" duration="6829000" />
-      <workItem from="1461240328635" duration="6954000" />
+      <workItem from="1461240328635" duration="6995000" />
     </task>
     <task id="LOCAL-00001" summary="progressing">
       <created>1461240125495</created>
@@ -392,11 +372,18 @@
       <option name="project" value="LOCAL" />
       <updated>1461240125495</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="progressing">
+      <created>1461250302201</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1461250302201</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16859000" />
+    <option name="totallyTimeSpent" value="16900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="1413" extended-state="0" />
