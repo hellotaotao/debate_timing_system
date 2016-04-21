@@ -74,7 +74,7 @@ nav.top-bar {
       height: 57px; }
 
 .tabs-content {
-  min-height: 600px; }
+  min-height: 400px; }
   .tabs-content .content .row .columns .stopwatch {
     min-height: 450px;
     background-image: radial-gradient(at top, #63c2f8, #008baa); }
