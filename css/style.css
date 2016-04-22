@@ -116,4 +116,6 @@ footer.panel {
   position: fixed;
   bottom: 0;
   width: 100%;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 15px; }
