@@ -15,10 +15,10 @@
       <div class="row">
         <div class="medium-6 columns">
           <div class="text-white right">正方</div><br>
-          <div class="debate-topic right button round">以暴制暴是正义</div>
+          <div id="topic-pro" class="debate-topic right button round">以暴制暴是正义</div>
         </div>
         <div class="medium-6 columns">反方<br>
-          <div class="debate-topic left button round">以暴制暴不是正义</div>
+          <div id="topic-con" class="debate-topic left button round">以暴制暴不是正义</div>
         </div>
       </div>
     </nav>
@@ -185,7 +185,7 @@
 </html>
 <footer class="clearfix panel">
   <div class="text-white row">Program by taotao @ CCDD
-    <div class="right secondary tiny">表演赛>>></div>
+    <div id="change-topic-button" class="right secondary tiny">表演赛>>></div>
   </div>
 </footer>
 <script src="js/variables.js"></script>
@@ -201,4 +201,10 @@
 <script src="js/stopwatch_discuss.js"></script>
 <script src="js/stopwatch_final.js"></script>
 <script src="js/script.js"></script>
-<script>$(document).foundation();</script>
+<script>
+  $(document).foundation();
+  $("#change-topic-button").click(function(){
+    $("#topic-pro").html("长生不老是好事");
+    $("#topic-con").html("长生不老不是好事");
+  })
+</script>

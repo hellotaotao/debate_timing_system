@@ -16,13 +16,13 @@ html.no-js(lang='en')
           .text-white.right
             | 正方
           br
-          .debate-topic.right.button.round
+          #topic-pro.debate-topic.right.button.round
             | 以暴制暴是正义
         .medium-6.columns
           | 反方
 
           br
-          .debate-topic.left.button.round
+          #topic-con.debate-topic.left.button.round
             | 以暴制暴不是正义
 
     .tabs-content
@@ -100,7 +100,7 @@ html.no-js(lang='en')
 footer.clearfix.panel
   .text-white.row
     | Program by taotao @ CCDD
-    .right.secondary.tiny
+    #change-topic-button.right.secondary.tiny
       | 表演赛>>>
 
 
@@ -124,3 +124,7 @@ script(src='js/script.js')
 
 script.
   $(document).foundation();
+  $("#change-topic-button").click(function(){
+    $("#topic-pro").html("长生不老是好事");
+    $("#topic-con").html("长生不老不是好事");
+  })
