@@ -54,7 +54,7 @@
     // init
     var init = function() {
         var time = parseTime(duration);
-        output.innerHTML = time[1] + ':' + time[2] + '.' + time[3];
+        output.innerHTML = time[1] + ':' + time[2];
     };
 
     // run
@@ -66,7 +66,7 @@
             $("#stopwatch_left").style("background: red;");
         }
         var time = parseTime(time_left);
-        output.innerHTML = time[1] + ':' + time[2] + '.' + time[3];
+        output.innerHTML = time[1] + ':' + time[2];
     };
 
 
