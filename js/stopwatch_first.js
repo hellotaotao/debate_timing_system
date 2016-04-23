@@ -69,11 +69,11 @@
             ding.play();
             ding_played=true;
         }
-        if (time_left<=0 && dingding_played==false) {
+        if (time_left<=100 && dingding_played==false) {
             dingding.play();
             dingding_played=true;
             stop();
-            $("#stopwatch_left").style("background: red;");
+            // $("#stopwatch_left").style("background: red;");
         }
         var time = parseTime(time_left);
         output.innerHTML = time[1] + ':' + time[2];

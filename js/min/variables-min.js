@@ -1,1 +1,1 @@
-var first_duration=.52,first_ask_duration=.52,second_duration=.52,second_conclude_duration=.52,third_ask_duration=.52,third_conclude_duration=.52,discuss_duration=.52,free_duration=.52,final_duration=.52;
+var first_duration=4,first_ask_duration=1.5,second_duration=2.5,second_conclude_duration=2,third_ask_duration=2.5,third_conclude_duration=2,discuss_duration=2,free_duration=4,final_duration=4;

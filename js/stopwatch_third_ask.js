@@ -70,7 +70,7 @@
             ding.play();
             ding_played=true;
         }
-        if (time_left<=0) {
+        if (time_left<=100) {
             dingding.play();
             dingding_played=true;
             stop();

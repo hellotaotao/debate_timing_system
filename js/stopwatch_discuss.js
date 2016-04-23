@@ -66,11 +66,11 @@
     var run = function() {
         // get output array and print
         time_left = then+duration-Date.now()-delay;
-        if(time_left <= 30000 && ding_played==false){
-            ding.play();
-            ding_played=true;
-        }
-        if (time_left<=0) {
+        // if(time_left <= 30000 && ding_played==false){
+        //     ding.play();
+        //     ding_played=true;
+        // }
+        if (time_left<=100) {
             dingding.play();
             dingding_played=true;
             stop();
